@@ -214,9 +214,6 @@ usuariosController.registrar = (request, response) => {
         response.json({ estado: false, mensaje: "Error en registro" });
         return false;
       } else {
-        response.json({ estado: true, respuesta });
-      }
-
       const transportador = nodemailer.createTransport({
         host: config.emailHost,
         port: config.emailPort,
@@ -267,6 +264,7 @@ usuariosController.registrar = (request, response) => {
           response.json({ estado: true, mensaje: "Correo enviado" });
         }
       });
+    }
     });
   });
 };
