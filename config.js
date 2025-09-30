@@ -3,7 +3,7 @@ var config = {};
 config.bd = "BackendVenta";
 config.port = 3000;
 config.claveSecreta = "123abc098zyx";
-config.dominio = "http://localhost:4200"
+config.dominio = "https://bit.jhohanbustamante.online"
 config.expiracion = 1000 * 60 * 60
 
 config.bdUser = "adminVenta"
