@@ -101,7 +101,7 @@ index.use("/imagenes", express.static(__dirname + "/imagenes"));
 
 index.use('/', express.static(path.join(__dirname, 'dist/frontdesp/browser')));
 index.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/frontend/browser/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/frontdesp/browser/index.html'));
 });
 
 index.listen(config.port, () => {
