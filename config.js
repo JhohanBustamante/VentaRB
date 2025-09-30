@@ -23,7 +23,7 @@ config.negocio = "Venta de Lotes RB"
 config.listaCors = [
     "http://localhost:4200",
     "http://localhost:3000",
-    "https://bit.jhohanbustamante.online/"
+    "https://bit.jhohanbustamante.online"
 ]
 
 module.exports.config = config;
