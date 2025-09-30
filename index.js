@@ -63,7 +63,8 @@ index.use(
     resave: true,
     saveUninitialized: true,
     store: mongoStore.create({
-      client: mongoose.connection.getClient(),
+      //client: mongoose.connection.getClient(),
+      mongoUrl: conexion + "sessions",
       dbName: config.bd + "sessions",
       collectionName: "sessions",
       ttl: config.expiracion,
