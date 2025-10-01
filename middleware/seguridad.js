@@ -12,7 +12,7 @@ security.admin = (request, response, next) => {
             return false;
         } else {
             next()
-        }   
+        }
     }
 }
 
