@@ -15,11 +15,6 @@ const loteschema = new Schema({
 
 const modelo = mongoose.model("lotes", loteschema);
 
-
-
-
-
-
 lotesModels.buscar = (post, callback) => {
   if (!mongoose.Types.ObjectId.isValid(post._id)) {
   return response.json({ estado: false, mensaje: "Id inválido" });
@@ -41,9 +36,6 @@ lotesModels.cargar = (params, callback) => {
 };
 
 lotesModels.guardar = (post, callback) => {
-  if (!mongoose.Types.ObjectId.isValid(post._id)) {
-  return response.json({ estado: false, mensaje: "Id inválido" });
-}
   const instancia = new modelo();
   instancia.metrosCuadrados = post.metrosCuadrados;
   instancia.titulo = post.titulo;
