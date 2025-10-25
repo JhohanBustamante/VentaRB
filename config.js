@@ -25,6 +25,7 @@ config.listaCors = [
     "http://localhost:4200",
     "http://localhost:3000",
     "https://ventarb.kolisevm.online",
+"http://ventarb.kolisevm.online",
 "http://64.227.58.82:3000",
 "https://64.227.58.82:3000"
 ]
