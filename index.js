@@ -30,9 +30,12 @@ if(config.produccion == true){
   conexion = "mongodb://" + config.bdUser + ":" + config.bdPass + '@' + config.bdIp + ":" + config.bdPort +  "/" + config.bd
 }
 
+console.log(conexion)
+
 mongoose.connect(conexion).then((respuesta)=>{
     console.log("Conexion correcta a mongo")
 }).catch((error) => {
+	console.log("error en conexion")
     console.log(error)
 })
 

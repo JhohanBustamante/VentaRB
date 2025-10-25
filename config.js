@@ -1,13 +1,13 @@
 
 var config = {};
 
-config.bd = "admin";
+config.bd = "BackendVentaRB";
 config.port = 3000;
 config.claveSecreta = "123abc098zyx";
 config.dominio = "https://ventarb.kolisevm.online"
 config.expiracion = 1000 * 60 * 60
 
-config.bdUser = "rootAdmin"
+config.bdUser = "adminVenta"
 config.bdPass = "prueba123"
 config.bdIp = "64.227.58.82"
 config.bdPort = "27017"
